@@ -1,0 +1,82 @@
+.todo-container{
+  max-height: 500px;
+  padding: 20px;
+}
+.todo-container h1{
+ font-size: 32px;
+ padding-bottom: 20px;
+}
+ .todo-container input{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.todo-container button{
+  padding: 7px;
+  cursor: pointer;
+  border: none;
+  background-color: #3434eb;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+}
+li button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.complete-btn {
+  background-color: #16a34a;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+}
+.complete-btn:hover {
+  background-color: #15803d;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+.clear-all{
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .todo-container {
+    padding: 12px;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+
+  li button {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+.due-date {
+  font-size: 12px;
+  color: #64748b;
+  margin-left: 8px;
+}
